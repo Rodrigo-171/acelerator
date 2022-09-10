@@ -1,0 +1,203 @@
+html, body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+/*--------------header--------------*/
+#header{ 
+    width: 100%;
+    background-color: rgb(47, 47, 47);
+    transition: background ease-out 0.2s;
+}
+
+#header .navbar-collapse{
+    width: auto;
+}
+
+#header .nav-link{
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: white;
+}
+
+#header .navbar-brand{
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+}
+
+#header .logo{
+    width: 200px;
+    height: auto;
+}
+
+/*--------------background image--------------*/
+
+.hero {
+    background-color: #666;
+        background-image: url(../img/overlay.png), url(../img/background.jpg);
+        background-position: right top, right bottom;
+        background-repeat: repeat, no-repeat;
+        background-size: auto, cover;
+        background-position-y: 20%;
+        color: #fff;
+        padding: 12em 0 20em 0;
+    }
+    
+    .hero_div{
+        width: 100%;
+        display: flex;
+    }
+    
+    .title{
+        width: 100%;
+        text-align: left;
+        margin: 30px;
+    }
+    
+    
+    
+    
+    .hero__title {
+        width: 100%;
+        font-size: calc(36px + 18 * ((100vw - 576px) / 1024));
+        font-weight: 900;
+        -webkit-background-clip: text;
+        color: white;
+        text-shadow: 4px 3px 4px rgb(0 0 0 / 16%);
+        text-align: left;
+    }
+    
+    .hero__text {
+        width: 100%;
+        color: white;
+        font-weight: 300;
+        font-size: clamp(1rem, 2.5vw, 2rem);;
+        margin-top: 20px;
+        text-align: left;
+    }
+    
+    .btn{
+        margin-top: 30px;
+    }
+    
+    .hero__btn {
+        width: 100%;
+        max-width: 100%;
+        border: none;
+        background-image: linear-gradient(147deg, #e38850, #ff6b02);
+        border-radius: 5px;
+        padding: 12px 39px;
+        display: flex;
+        color: white;
+        text-decoration: none;
+        font-size: 1.15rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        align-items: center;
+        letter-spacing: 0.125rem;
+    }
+    
+    .hero__btn:hover {
+        background-color: #fca643;
+        transition: 0.5s;
+    }
+    
+    .hero_image{
+        width: 45%;
+        display: flex;
+        position: relative;
+    }
+    
+    .hero_image img{
+        display: initial;
+        position: absolute;
+        height: auto;
+        width: 480px;
+    }
+    .hero_div .title {
+        width: 100%;
+        text-align: center;
+    }
+    .hero_div .btn {
+        width: max-content;
+        display: block;
+        margin: 11% auto 0;
+    }
+
+/* Problemas com a empresa*/
+#section-problemas{
+    background: linear-gradient(#121212, #000000);
+    padding: 12em 0 20em 0;
+}
+.header-problema{ 
+    text-align: center;
+}
+.title-problemas{
+    font-size: calc(36px + 18 * ((100vw - 576px) / 1024));
+    font-weight: 600;
+    color: #ff6b02;
+    text-align: center;
+}
+
+.sub-title-problemas{
+    font-size: calc(26px + 18 * ((100vw - 576px) / 1024));
+    font-weight: 600;
+    color: #ff6b02;
+    text-align: left;
+}
+
+.text-center{
+    margin-top: 5%;
+}
+
+.lista-problema{
+    font-size: calc(16px + 18 * ((100vw - 576px) / 1024));
+    color: white;
+}
+
+.lista-problema li{
+    text-align: left;
+    font-size: font-size: calc(8px + 18 * ((100vw - 576px) / 1024));;
+}
+
+/* MENTOR */
+#section-mentor{
+    background-color: #666;
+    background-image: url(../img/mentor.png), url(../img/bg-mentor.png);
+    background-position: -50px -50px, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, cover;
+    background-position-y: 20%;
+    color: #fff;
+    padding: 12em 0 20em 0;
+}
+.img-mentor{
+   
+}
+
+.textos-mentor{
+    margin-left: 20%;
+}
+
+.title-mentor {
+    font-size: calc(32px + 18 * ((100vw - 576px) / 1024));
+    color: white;
+    text-transform: uppercase;
+    z-index: 74;
+}
+
+.title-mentor span{color: #ff6b02;}
+
+.sub-title-mentor{
+    font-size: calc(18px + 18 * ((100vw - 576px) / 1024));
+    color: white;
+    margin-top: 3%;
+    z-index: 74;
+}
+
+.sub-title-mentor span{color: #ff6b02;}
