@@ -162,7 +162,8 @@ html, body{
 
 .lista-problema li{
     text-align: left;
-    font-size: font-size: calc(8px + 18 * ((100vw - 576px) / 1024));;
+    font-size: calc(8px + 18 * ((100vw - 576px) / 1024));
+
 }
 
 /* MENTOR */
@@ -175,9 +176,6 @@ html, body{
     background-position-y: 20%;
     color: #fff;
     padding: 12em 0 20em 0;
-}
-.img-mentor{
-   
 }
 
 .textos-mentor{
