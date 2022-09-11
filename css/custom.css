@@ -226,11 +226,89 @@ html, body{
 .sub-title-mentor span{color: rgb(255, 154, 50);;}
 
 /* Planos */
-.cards {
-    display: flex;
-    align-items: center;
-    padding: 32px;
-    justify-content: center;
+.row>* {
+    padding: 0;
+}
+
+.card-plano {
+    position: relative;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.ribbon {
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: -55px;
+    text-align: center;
+    line-height: 50px;
+    color: #222;
+    font-weight: bold;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+}
+
+.top-plano {
+    background: #101010;
+    color: #eee;
+    padding: 40px;
+    color: #ECF0F1;
+    text-align: center;
+}
+
+.bottom-plano {
+    border-top: 0px;
+    padding-bottom: 5px;
+    color: #eee;
+    background: #101010;
+    text-align: center;
+}
+
+.bottom-plano ul {
+    list-style: none;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+
+.bottom-plano ul li {
+    line-height: 60px;
+    padding: 0px 30px;
+}
+
+.bottom-plano ul li:nth-child(odd) {
+    background: rgba(255, 255, 255, .05);
+}
+
+.bottom-plano i {
+    margin-right: 10px;
+    font-size: 14px;
+    color: orange;
+}
+
+.bottom-plano > a {
+    margin: 40px;
+    width: auto;
+}
+
+a.btn-custom, input.btn-custom {
+    font-size: 13px;
+    color: #222;
+    letter-spacing: 3px;
+    line-height: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 25px 7px 25px;
+    background: orange;
+    display: inline-block;
+}
+
+.ps1-deco{
+    background: orange;
+    height: 4px;
 }
 
 #planos .container h1 {
@@ -241,84 +319,6 @@ html, body{
     text-align: center;
 }
 
-.card-plano {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
-    padding: 2rem 2.5rem;
-    border-radius: 8px;
-    max-height: 438px;
-    margin-left: 32px;
-}
-
-.card-plano.mensal {
-    background: linear-gradient(180deg,#018001 0%,#29a023 100%);
-    box-shadow: 20px 20px 50px -30px #afd6ff;
-}
-
-.card-plano.anual {
-    background: linear-gradient(180deg,#fca61c 0%,#faa72a 100%);
-    box-shadow: 20px 20px 50px -30px #afd6ff;
-}
-
-.card-plano h3 {
-    font-size: 30px;
-    margin: 16px 0;
-    font-weight: 500;
-    color: #fff;
-}
-
-.card-plano span {
-    font-weight: 500;
-    max-width: 240px;
-    font-size: 80%;
-    margin-bottom: 16px;
-    min-height: 150px;
-    color: #fff;
-}
-
-.card-plano h2 {
-    font-size: clamp(1rem, 2vw, 3rem); 
-    color: #fff;
-    font-weight: 900;
-}
-
-.card-plano button {
-    padding: 0.5rem 1rem;
-    text-transform: uppercase;
-    border-radius: 32px;
-    border: none;
-    cursor: pointer;
-    font-size: 80%;
-    font-weight: 600;
-    color: #fff;
-    border: none !important;
-    box-shadow: none !important;
-}
-
-.card-plano button {
-    background-image: linear-gradient(147deg, #8472ec, #094ba5 );
-}
-
-.card-plano button a{
-    text-decoration: none;
-    color: white;
-}
-
-
-.card-plano h2 b {
-    font-size: 14px;
-    color: #fff;
-}
-
-.card-plano h2 span {
-    font-size: 10px;
-    display: block;
-    min-height: auto;
-    color: #fff;
-}
 
 .spothlight-branco::after {
     transform: scaleY(-1);
