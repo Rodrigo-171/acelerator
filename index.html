@@ -7,9 +7,13 @@
     <title>Acelerador</title>
     <!--CSS-->
     <link href="css/main.css" rel="stylesheet">
-    <!--FONT-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
+    <!--LINK FONTAWESOME ICONS-->
+  <!--FONTAWESOME CDN LINK-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 
 <body>
@@ -25,10 +29,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Página inicial</a>
-                        <a class="nav-link" href="#">Participantes</a>
-                        <a class="nav-link" href="#">Mentor</a>
-                        <a class="nav-link" href="#">Comece já</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Página inicial</a>
+                        <a class="nav-link" href="#participantes">Participantes</a>
+                        <a class="nav-link" href="#section-mentor">Mentor</a>
+                        <a class="nav-link" href="#planos">Planos</a>
+                        <a class="nav-link" href="form.html">Comece já</a>
                     </div>
                 </div>
             </nav>
@@ -50,7 +55,7 @@
     </section>
 
     <!--PROBLEMAS COM A EMPRESA-->
-    <div id="section-problemas">
+    <div id="section-problemas" class="spothlight">
         <section class="container">
             <div class="header-problema">
                 <h2 class="title-problemas">Você tem esses problemas em sua empresa?</h2>
@@ -87,15 +92,181 @@
         <section class="container">
             <div class="img-mentor textos-mentor">
                 <h2 class="title-mentor">Seu <span>mentor</span></h2>
-                <p>Sou Marcus Marques, empresário, investidor e mentor em gestão para pequenas e médias empresas. Construí com minha família uma empresa que atingiu mais de R$ 100 milhões de faturamento anual.</p>                    <p>Sou conselheiro do Giants, grupo de desenvolvimento empresarial com mais de 200 empresários que juntos faturam R$ 2 bilhões por ano e empregam mais de 5000 funcionários.</p>
-                <p>Depois de mais de 15 anos focado na gestão e no empreendedorismo, fundei o Acelerador Empresarial e já treinei pessoalmente mais de 5.000 donos e donas de empresas.</p>
-                <p>Agora, quero fazer o mesmo por você e por sua empresa: te guiar numa imersão de 3 dias para juntos acelerarmos o seu negócio.</p>
+                <p class="p-mentor">Sou Marcus Marques, empresário, investidor e mentor em gestão para pequenas e médias empresas. Construí com minha família uma empresa que atingiu mais de R$ 100 milhões de faturamento anual.</p>                    
+                <p class="p-mentor">Sou conselheiro do Giants, grupo de desenvolvimento empresarial com mais de 200 empresários que juntos faturam R$ 2 bilhões por ano e empregam mais de 5000 funcionários.</p>
+                <p class="p-mentor">Depois de mais de 15 anos focado na gestão e no empreendedorismo, fundei o Acelerador Empresarial e já treinei pessoalmente mais de 5.000 donos e donas de empresas.</p>
+                <p class="p-mentor">Agora, quero fazer o mesmo por você e por sua empresa: te guiar numa imersão de 3 dias para juntos acelerarmos o seu negócio.</p>
                 <h3 class="sub-title-mentor">Assim como venho fazendo no <span>Acelerador Empresarial</span> desde o seu surgimento…</h3>
                 <h3 class="sub-title-mentor">MOTIVANDO E ENGAJANDO POR ANOS MEU TIME E <span>OBTENDO O RECONHECIMENTO DE UMA DAS MELHORES EMPRESAS</span> PARA SE TRABALHAR NO BRASIL.</h3>
             </div>
         </section>
     </div>
 
+    <!--Planos-->
+
+    <section id="planos" class="spothlight-branco">
+        <div class="container">
+            <h1>Planos</h1>
+            <div class="cards">
+                <div class="card-plano mensal">
+                    <h3>Plano Mensal</h3>
+                    <span>Aqui a cobrança é feita mensalmente. Caso não queira mais assinar o LojaON, você pode cancelar a qualquer momento e não receberá novas cobranças. Além disso, você também pode solicitar o reembolso em até 7 dias após o pagamento mensal</span>
+                    <h2>R$49,90</h2>
+                    <button><a href="form.html">Comece já</a></button>
+                </div>
+                <div class="card-plano anual">
+                    <h3>Plano Anual</h3>
+                    <span>Aqui a cobrança é feita anualmente no valor total de R$ 478,80 reais à vista ou em 12 vezes sem juros e você tem 7 dias para solicitar o reembolso.</span>
+                    <h2>R$39,90<b>/Mês</b><span>*Cobrado anualmente</span></h2>
+
+                    <button><a href="form.html">Comece já</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--GARANTIA-->
+    <section id="garantia">
+        <div class="container container-garantia">
+            <h1 class="title-garantia">Garantia do <span>seu dinheiro de volta</span></h1>
+            
+            <div class="container-selo d-flex justify-content-center">
+                <p class="p-garantia">reconhecido<br> em cartório</p>
+                <img class="img-fluid img-selo" src="img/selo.png" alt="">
+            </div>
+                
+            
+            <ul class="lista-garantia">
+                <li>Se ao final do terceiro dia da imersão você não tiver levado muito mais do que esperava, procure nosso time.</li>
+                <li>Além de devolvermos cada centavo do seu investimento, ainda receberá R$ 1.000,00 pelo tempo dedicado. </li>
+                <li>Essa garantia é registrada em cartório.</li>
+                <li>Mais de 5.000 empresas já passaram pelo Acelerador Empresarial e a garantia nunca foi usada.</li>
+            </ul>
+            <img class="img-fluid clausula rounded mx-auto d-block" src="img/clausula-confiança.jpg" alt="cláusula de confiança">
+        </div>
+    </section>
+
+
+    <!--Participantes-->
+    <section id="participantes" class="section-part spothlight">
+        <div class="container">
+            <h1 class="title-part"><span>100% dos participantesdo Acelerador Empresarial</span> são criteriosamente selecionados.</h1>
+            <p class="sub-title-part">Os maiores empresários do Brasil são alunos do Acelerador Empresarial</p>
+        </div>
+        <div class="container swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card" style="width: 18rem;">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/participantes/Bianca-andrade.png" class="card-img-top card-img" alt="Bianca Andrade">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="name">Bianca Andrade</h2>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card" style="width: 18rem;">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/participantes/carla-sarni.jpg" class="card-img-top card-img" alt="Bianca Andrade">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="name">Carla Sarni</h2>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card" style="width: 18rem;">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/participantes/janguie-diniz.jpg" class="card-img-top card-img" alt="Bianca Andrade">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="name">Janguie Diniz</h2>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card" style="width: 18rem;">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="img/participantes/Paula.png" class="card-img-top card-img" alt="Bianca Andrade">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="name">Paula Abreu</h2>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination "></div>
+        </div>
+
+        <div class="container">
+            <div class="texto-part">
+                <h2>Nos 3 dias intensos de imersão, você terá acesso a:</h2>
+                <p>Ferramentas práticas de simples implementação, assegurando que seus negócios entrem de imediato no caminho do crescimento acelerado.</p>
+            </div>
+            <div class="mx-auto">
+                <p class="texto-part-final">É esse o caminho que vai reduzir o prazo até seus lucros e resultados <span>de 5 anos para até 12 meses!</span> É isso que você vai aprender a colocar em prática na imersão!</p>
+                <button type="submit" class="btn btn-primary btn-lg button-part"><a href="form.html">QUERO MAIS LUCRO E LIBERDADE</a></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <footer class="footer">
+            <div class="container_footer">
+              <div class="row">
+                <div class="footer_col">
+                  <h4>Acelerador Empresarial</h4>
+                  <ul>
+                    <li><a href="index.html">Página inicial</a></li>
+                    <li><a href="#section-mentor">Mentor</a></li>
+                    <li><a href="#participantes">Participantes</a></li>
+                    <li><a href="#planos">Planos</a></li>
+                  </ul>
+                </div>
+        
+                <div class="footer_col">
+                  <h4>Política e Privacidade</h4>
+                  <ul>
+                    <li><a href="#">© 2022 Rodrigo Medeiros</a></li>
+                    <li><a href="#">Todos direitos reservados</a></li>
+                    
+                  </ul>
+                </div>
+        
+                <div class="footer_col">
+                  <h4>Siga-nos</h4>
+                  <div class="social-links">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+                </div>
+        
+        
+              </div>
+            </div>
+        
+          </footer>
+    </footer>
 
 
 
@@ -103,6 +274,9 @@
 
 
     <script src="js/bootstrap.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
 </body>
 
 </html>

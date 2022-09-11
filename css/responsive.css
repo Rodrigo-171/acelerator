@@ -1,0 +1,43 @@
+@media screen and (max-width: 768px) {
+    .slide-content {
+        margin: 0 10px;
+    }
+
+    .swiper-navBtn {
+        display: none !important;
+    }
+
+    .footer_col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+     #planos::after, #section-problemas::after, #planos::before, .section-part::before{
+        display: none;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .card-plano {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    .hero{
+        padding: 0;
+    }
+
+    .container-selo{
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width:574px){
+    .footer_col{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
